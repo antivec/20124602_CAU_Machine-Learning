@@ -62,7 +62,7 @@
 
 	
 	기본적인 명령어는 windows cmd와 많이 흡사하다.
-	이를 통해 OS환경에 구속되지 않고 프로젝트를 업로드하거나 다운로드 받는것이 가능하다.
+	이를 통해 OS환경에 구속되지 않고 프로젝트를 업로드하거나 local로 다운로드 받는것이 가능하다.
 	
 	우선적으로 git에서 프로젝트를 다운받거나 업로드를 하기 위해선 해당 폴더에 git환경을 조성해야한다.명령어는 다음과 같다.
 	\begin{mdframed}[
@@ -98,7 +98,7 @@
 		\end{enumerate}  		
 	\end{mdframed}
 	\subsection{github로부터 프로젝트 받기}
-	앞선 그림처럼 git환경 초기화가 성공했을경우, githhub에 올린 프로젝트를 다음과 같은 명령어로 해당 폴더에 다운받을수 있다
+	앞선 그림처럼 git환경 초기화가 성공했을경우, githhub에 올린 프로젝트를 다음과 같은 명령어로 해당 폴더에 local로 받을수 있다
 		\begin{mdframed}[
 			linecolor= black,
 			roundcorner=10pt,
@@ -109,12 +109,39 @@
 			frametitlerulewidth = 0.5pt,
 			frametitlealignment =,
 			frametitlebackgroundcolor = yellow,			
-			frametitle = {git환경 설정하기}	]
+			frametitle = {git으로부터 프로젝트 받기}	]
 			\includegraphics[width=\textwidth]{git_clone}
-			- git clone  \href{https://github.com/antivec/20124602_CAU_Machine-Learning}{다운받고자 하는 github의 주소} .git	
+			- git clone  \href{https://github.com/antivec/20124602_CAU_Machine-Learning}{다운받고자 하는 github의 주소}
+			
+			\includegraphics[width=\textwidth]{git_pull}
+			git clone으로 프로젝트를 받은후에는 git pull로 local저장소에 수정된 코드를 얻어 올 수 있다.
+			- git pull
 		\end{mdframed}
 		
-		
+		\subsection{local에서 수정한 코드를 github에 업로드 하기}
+	local에서 수정한 코드를 github에 업로드를 하기 위해서는 다음과 같은 과정이 필요하다.
+	\begin{mdframed}[
+		linecolor= black,
+		roundcorner=10pt,
+		innertopmargin =\topskip,
+		leftmargin = 0.5cm,
+		rightmargin = 0.5cm,
+		frametitleaboveskip = 0.5pt,
+		frametitlerulewidth = 0.5pt,
+		frametitlealignment =,
+		frametitlebackgroundcolor = yellow,			
+		frametitle = {githhub에 수정된 파일 올리기}	]
+		\begin{enumerate}
+			\item git add . //변동이 생긴 모든 파일을 github 업로드 한다
+			
+			\includegraphics[width=0.75\textwidth]{start}
+			\item git commit -m "" // 업로드한 변동이 생긴 파일에 description을 생성한다
+			
+			\includegraphics[width=0.75\textwidth]{owner}
+			\item git push //github에 등록한다
+			\includegraphics[width=0.75\textwidth]{publc}
+		\end{enumerate}  		
+	\end{mdframed} 
   %	\href{https://github.com/antivec/20124602_CAU_Machine-Learning}{github 주소}
   % This is a comment; it will not be shown in the final output.
   % The following shows a little of the typesetting power of LaTeX:
