@@ -20,7 +20,7 @@
    	\centering   
    	\label{github main}
    	\includegraphics[width=0.75\textwidth]{main_github}
-   	\caption{개인github 메인화면}
+   	\caption{github 메인화면}
    \end{figure}
 	\subsection{프로젝트 시작하기}
   	github에 개인용 또는 팀용 프로젝트를 시작하려면 다음과 같은 간단한 과정 걸쳐야 한다.
@@ -46,7 +46,7 @@
   			\includegraphics[width=0.75\textwidth]{publc}
   		\end{enumerate}  		
   	\end{mdframed} 
-  최종적으로 다음과 같은 프로젝트가 공간이 생길것이다.  
+  최종적으로 다음과 같은 프로젝트가 공간이 생길것이다.\footnote{\href{https://github.com/antivec/20124602_CAU_Machine-Learning}{https://github.com/antivec/20124602 CAU Machine-Learning}}  
   \begin{figure}[!hbp] 
   	\label{create_repository}
   	\includegraphics[width=0.65\textwidth]{create_repository}
@@ -57,7 +57,7 @@
 	\textit{\href{https://git-scm.com/download/win}{git홈페이지}}에 들어가 git을 설치하게 되면 다음과 같은(figure3) cmd창을 실행할 수 있다
 	\begin{figure}		
 		\includegraphics[width=0.75\textwidth]{git_cmd}
-		\caption{개인github 메인화면}
+		\caption{github 메인화면}
 	\end{figure}
 
 	
@@ -92,8 +92,8 @@
 		frametitlebackgroundcolor = yellow,			
 		frametitle = {git프로필 설정하기}	]
 		\begin{enumerate}
-			\item git config --global user.name = ""		
-			\item git config --global user.email = ""	
+			\item git config --global user.name = "" \footnote{이름 설정}	
+			\item git config --global user.email = ""	\footnote{이메일 설정}
 
 		\end{enumerate}  		
 	\end{mdframed}
@@ -132,14 +132,21 @@
 		frametitlebackgroundcolor = yellow,			
 		frametitle = {githhub에 수정된 파일 올리기}	]
 		\begin{enumerate}
-			\item git add . //변동이 생긴 모든 파일을 github 업로드 한다
+			\item git add . //변동이 생긴 모든 파일을 github 업로드 한다 \footnote{add뒤에 파일명을 입력하면, 해당 변동된 파일만 업로드한다}
 			
-			\includegraphics[width=0.75\textwidth]{start}
-			\item git commit -m "" // 업로드한 변동이 생긴 파일에 description을 생성한다
+			\includegraphics[width=0.75\textwidth]{add}
 			
-			\includegraphics[width=0.75\textwidth]{owner}
+			\item git commit -m "" // 업로드한 변동이 생긴 파일에 description을 생성한다			
+			
+			\includegraphics[width=0.75\textwidth]{commit}
+			
 			\item git push //github에 등록한다
-			\includegraphics[width=0.75\textwidth]{publc}
+			
+			\includegraphics[width=0.75\textwidth]{push}
+			
+			\item 성공적으로 업로드가 되면 다음과 같이 업로드 된다
+			
+			\includegraphics[width=0.75\textwidth]{result}
 		\end{enumerate}  		
 	\end{mdframed} 
   %	\href{https://github.com/antivec/20124602_CAU_Machine-Learning}{github 주소}
